@@ -53,7 +53,7 @@ export class User extends React.Component<RouteComponentProps<any>, UserState> {
     }
 
     public getUserHeader(user: IUser): JSX.Element {
-        if (user.id != 0) {
+        if (user.id) {
             return <span>Edit User</span>
         } else {
             return <span>New User</span>
